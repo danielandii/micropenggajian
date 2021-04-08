@@ -14,7 +14,7 @@ class CreateGajisTable extends Migration
     public function up()
     {
         Schema::create('gajis', function (Blueprint $table) {
-            $table->increments('idgaji');
+            $table->increments('id');
             $table->string('gaji_pokok');
             $table->string('tunjangan');
             $table->string('potongan');

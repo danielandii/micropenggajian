@@ -14,8 +14,8 @@ class CreateHistoriGajisTable extends Migration
     public function up()
     {
         Schema::create('histori_gajis', function (Blueprint $table) {
-            $table->increments('idhistori_gaji');
-            $table->string('user');
+            $table->increments('id');
+            $table->string('user_id');
             $table->string('tanggal');
             $table->string('gaji_pokok');
             $table->string('tunjangan');

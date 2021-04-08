@@ -8,5 +8,10 @@ class gaji extends Model
 {
     //
     protected $fillable = [
-        'gaji_pokok','tunjangan','potongan','rekening'
-];}
+        'user_id','gaji_pokok','tunjangan','potongan','rekening'
+];
+
+public function User(){
+    return $this->belongsTo('App\Models\user');
+    }
+}

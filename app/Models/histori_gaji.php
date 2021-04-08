@@ -8,6 +8,6 @@ class histori_gaji extends Model
 {
     //
     protected $fillable = [
-        'user','tanggal','gaji_pokok','tunjangan','potongan','rekening'
+        'user_id','tanggal','gaji_pokok','tunjangan','potongan','rekening'
     ];
 }

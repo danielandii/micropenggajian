@@ -30,4 +30,12 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
     protected $hidden = [
         'password',
     ];
+
+    public function histori_gaji(){
+        return $this->hasMany('App\Models\histori_gaji');
+    }
+
+    public function gaji(){
+    	return $this->belongsTo('App\Models\gaji');
+    }
 }

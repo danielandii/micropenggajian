@@ -50,6 +50,8 @@ $router->group(['prefix'=> 'api'] , function()use ($router){
     $router ->put ('user/{id}' , ['uses' => 'UserController@update']);
     
     $router ->post ('user' , ['uses' => 'UserController@create']);
+
+    $router->get('getUserHistoriGaji/{id}', ['uses' => 'UserController@getUserHistoriGaji'] );
     
 });
 
